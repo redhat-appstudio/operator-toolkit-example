@@ -44,7 +44,7 @@ func (f *Foo) MarkHealthy(reason conditions.ConditionReason) {
 
 // MarkUnhealthy marks the Foo resource as unhealthy
 func (f *Foo) MarkUnhealthy() {
-	conditions.SetCondition(&f.Status.Conditions, healthConditionType, metav1.ConditionTrue, NotEnoughReplicasReason)
+	conditions.SetCondition(&f.Status.Conditions, healthConditionType, metav1.ConditionFalse, NotEnoughReplicasReason)
 }
 
 // +kubebuilder:object:root=true

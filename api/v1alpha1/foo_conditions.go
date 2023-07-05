@@ -4,7 +4,6 @@ import "github.com/redhat-appstudio/operator-toolkit/conditions"
 
 const (
 	// healthConditionType is the type used to track the health of a Foo resource
-
 	healthConditionType conditions.ConditionType = "Health"
 )
 
