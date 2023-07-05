@@ -6,7 +6,7 @@ require (
 	github.com/go-logr/logr v1.2.3
 	github.com/onsi/ginkgo/v2 v2.6.0
 	github.com/onsi/gomega v1.24.1
-	github.com/redhat-appstudio/operator-toolkit v0.0.0-20230629102132-9322a6882c56
+	github.com/redhat-appstudio/operator-toolkit v0.0.0-20230705141436-de654b7a7aed
 	k8s.io/api v0.26.1
 	k8s.io/apimachinery v0.26.1
 	k8s.io/client-go v0.26.1
