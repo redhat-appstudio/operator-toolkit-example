@@ -49,14 +49,14 @@ func (w *Webhook) Register(mgr ctrl.Manager, log *logr.Logger) error {
 
 // +kubebuilder:webhook:path=/mutate-appstudio-redhat-com-v1alpha1-bar,mutating=true,failurePolicy=fail,sideEffects=None,groups=appstudio.redhat.com,resources=bars,verbs=create;update,versions=v1alpha1,name=mbar.kb.io,admissionReviewVersions=v1
 
-// Default implements webhook.Defaulter so a webhook will be registered for the type
+// Default implements webhook.Defaulter so a webhook will be registered for the type.
 func (w *Webhook) Default(ctx context.Context, obj runtime.Object) error {
 	return nil
 }
 
 // +kubebuilder:webhook:path=/validate-appstudio-redhat-com-v1alpha1-bar,mutating=false,failurePolicy=fail,sideEffects=None,groups=appstudio.redhat.com,resources=bars,verbs=create;update,versions=v1alpha1,name=vbar.kb.io,admissionReviewVersions=v1
 
-// ValidateCreate implements webhook.Validator so a webhook will be registered for the type
+// ValidateCreate implements webhook.Validator so a webhook will be registered for the type.
 func (w *Webhook) ValidateCreate(ctx context.Context, obj runtime.Object) error {
 	bar := obj.(*v1alpha1.Bar)
 
@@ -68,12 +68,12 @@ func (w *Webhook) ValidateCreate(ctx context.Context, obj runtime.Object) error 
 	return nil
 }
 
-// ValidateUpdate implements webhook.Validator so a webhook will be registered for the type
+// ValidateUpdate implements webhook.Validator so a webhook will be registered for the type.
 func (w *Webhook) ValidateUpdate(ctx context.Context, oldObj, newObj runtime.Object) error {
 	return nil
 }
 
-// ValidateDelete implements webhook.Validator so a webhook will be registered for the type
+// ValidateDelete implements webhook.Validator so a webhook will be registered for the type.
 func (w *Webhook) ValidateDelete(ctx context.Context, obj runtime.Object) error {
 	return nil
 }
