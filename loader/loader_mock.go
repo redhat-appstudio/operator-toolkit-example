@@ -7,14 +7,14 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 
-type mockLoader struct {
-	loader ObjectLoader
-}
-
 const (
 	FooContextKey  toolkit.ContextKey = iota
 	BarsContextKey toolkit.ContextKey = iota
 )
+
+type mockLoader struct {
+	loader ObjectLoader
+}
 
 func NewMockLoader() ObjectLoader {
 	return &mockLoader{

@@ -27,7 +27,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 
-// Webhook describes the data structure for the author webhook
+// Webhook describes the data structure for the bar webhook
 type Webhook struct {
 	client client.Client
 	loader loader.ObjectLoader
