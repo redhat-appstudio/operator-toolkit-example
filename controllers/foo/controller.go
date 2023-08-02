@@ -30,7 +30,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 )
 
-// FooReconciler reconciles a Foo object
+// Controller reconciles a Foo object
 type Controller struct {
 	client client.Client
 	log    logr.Logger
