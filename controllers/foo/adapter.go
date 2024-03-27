@@ -2,10 +2,11 @@ package foo
 
 import (
 	"context"
+
 	"github.com/go-logr/logr"
-	"github.com/redhat-appstudio/operator-toolkit-example/api/v1alpha1"
-	"github.com/redhat-appstudio/operator-toolkit-example/loader"
-	"github.com/redhat-appstudio/operator-toolkit/controller"
+	"github.com/konflux-ci/operator-toolkit-example/api/v1alpha1"
+	"github.com/konflux-ci/operator-toolkit-example/loader"
+	"github.com/konflux-ci/operator-toolkit/controller"
 	"k8s.io/apimachinery/pkg/api/errors"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"

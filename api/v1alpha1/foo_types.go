@@ -17,7 +17,7 @@ limitations under the License.
 package v1alpha1
 
 import (
-	"github.com/redhat-appstudio/operator-toolkit/conditions"
+	"github.com/konflux-ci/operator-toolkit/conditions"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

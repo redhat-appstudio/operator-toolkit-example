@@ -2,8 +2,9 @@ package loader
 
 import (
 	"context"
-	"github.com/redhat-appstudio/operator-toolkit-example/api/v1alpha1"
-	toolkit "github.com/redhat-appstudio/operator-toolkit/loader"
+
+	"github.com/konflux-ci/operator-toolkit-example/api/v1alpha1"
+	toolkit "github.com/konflux-ci/operator-toolkit/loader"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 

@@ -18,13 +18,14 @@ package bar
 
 import (
 	"context"
+
 	"github.com/go-logr/logr"
-	"github.com/redhat-appstudio/operator-toolkit-example/loader"
-	"github.com/redhat-appstudio/operator-toolkit/controller"
+	"github.com/konflux-ci/operator-toolkit-example/loader"
+	"github.com/konflux-ci/operator-toolkit/controller"
 	"k8s.io/apimachinery/pkg/api/errors"
 	"sigs.k8s.io/controller-runtime/pkg/cluster"
 
-	"github.com/redhat-appstudio/operator-toolkit-example/api/v1alpha1"
+	"github.com/konflux-ci/operator-toolkit-example/api/v1alpha1"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )

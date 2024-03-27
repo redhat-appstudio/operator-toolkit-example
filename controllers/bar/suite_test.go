@@ -19,8 +19,9 @@ package bar
 import (
 	"context"
 	"path/filepath"
-	ctrl "sigs.k8s.io/controller-runtime"
 	"testing"
+
+	ctrl "sigs.k8s.io/controller-runtime"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
@@ -32,7 +33,7 @@ import (
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	appstudiov1alpha1 "github.com/redhat-appstudio/operator-toolkit-example/api/v1alpha1"
+	appstudiov1alpha1 "github.com/konflux-ci/operator-toolkit-example/api/v1alpha1"
 	//+kubebuilder:scaffold:imports
 )
 

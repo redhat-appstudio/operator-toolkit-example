@@ -20,12 +20,13 @@ import (
 	"context"
 	"crypto/tls"
 	"fmt"
-	"github.com/redhat-appstudio/operator-toolkit-example/api/v1alpha1"
 	"net"
 	"path/filepath"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
 	"testing"
 	"time"
+
+	"github.com/konflux-ci/operator-toolkit-example/api/v1alpha1"
+	"sigs.k8s.io/controller-runtime/pkg/manager"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
