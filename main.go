@@ -18,11 +18,13 @@ package main
 
 import (
 	"flag"
-	"github.com/redhat-appstudio/operator-toolkit-example/api/v1alpha1/webhooks"
-	"github.com/redhat-appstudio/operator-toolkit-example/controllers"
-	"github.com/redhat-appstudio/operator-toolkit/controller"
-	"github.com/redhat-appstudio/operator-toolkit/webhook"
 	"os"
+
+	"github.com/konflux-ci/operator-toolkit-example/api/v1alpha1/webhooks"
+	"github.com/konflux-ci/operator-toolkit-example/controllers"
+	"github.com/konflux-ci/operator-toolkit/controller"
+	"github.com/konflux-ci/operator-toolkit/webhook"
+
 	// Import all Kubernetes client auth plugins (e.g. Azure, GCP, OIDC, etc.)
 	// to ensure that exec-entrypoint and run can make use of them.
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
@@ -34,7 +36,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	appstudiov1alpha1 "github.com/redhat-appstudio/operator-toolkit-example/api/v1alpha1"
+	appstudiov1alpha1 "github.com/konflux-ci/operator-toolkit-example/api/v1alpha1"
 	//+kubebuilder:scaffold:imports
 )
 

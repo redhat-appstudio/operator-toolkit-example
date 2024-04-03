@@ -1,6 +1,6 @@
 # operator-toolkit-example
 
-This is a sample repository to show how to implement operators using [operator-tookit](https://github.com/redhat-appstudio/operator-toolkit).
+This is a sample repository to show how to implement operators using [operator-tookit](https://github.com/konflux-ci/operator-toolkit).
 
 ## Getting Started
 You’ll need a Kubernetes cluster to run against. You can use [KIND](https://sigs.k8s.io/kind) to get a local cluster for testing, or run against a remote cluster.
